@@ -1,0 +1,369 @@
+body{
+  font-family: Georgia, Arial, serif;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/blackorchid.png");
+  color: #d6d6d6;
+  line-height: 1.5;
+}
+
+#masthead{
+  background-color: #0d0d0d;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav{
+  width: 50%;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: #d6d6d6;
+  font-size: 1.5rem;
+}
+
+nav ul a:hover{
+  color: #6c000c;
+}
+
+#Biography{
+  background-image: url("images/homepage/block.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding-left: 1rem;
+}
+
+#Biography a{
+  text-decoration: none;
+  color: #FFF;
+  background-color: #aa0012;
+  padding: 0.5rem;
+}
+
+#brief{
+  text-align: center;
+}
+
+#brieftext{
+  text-align: left;
+}
+
+.quote{
+  border-top: 1px solid #FFF;
+  padding-top: 1rem;
+}
+
+.preview{
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.previewLinks{
+  display:flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.previewLinks a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+#WorksAndInfluences{
+  background-image: url("images/homepage/worksplash.png");
+  background-size: cover;
+  height: 50vh;
+  width: 40%;
+  background-position:center;
+}
+
+#Media{
+  background-image: url("images/homepage/mediasplash.jpg");
+  background-size: cover;
+  height: 50vh;
+  width: 40%;
+}
+
+#Reason{
+  background-image:url("images/homepage/reasonsplash.jpg");
+  background-size: cover;
+  height: 50vh;
+  width: 40%
+}
+
+.content{
+  display: flex;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.rightalign{
+  text-align: right;
+}
+
+.workcontent{
+  display: flex;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom: solid 1px #FFF;
+}
+
+.endcontent{
+  display: flex;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  line-height: 2;
+}
+
+.content article{
+  width: 60%;
+}
+
+.workcontent article{
+  width: 50%;
+}
+
+.endcontent article{
+  width: 50%;
+}
+
+.images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.publications{
+  display: flex;
+  gap: 2rem;
+}
+
+.flexcontainer{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.flexcontainer ul{
+  list-style-type: none;
+}
+
+.flexcontainer ul li a{
+  text-decoration: none;
+  color: #d6d6d6;
+}
+
+.flexcontainer ul li a:hover{
+  color: #6c000c;
+}
+
+.package{
+  padding: 1rem;
+}
+
+#tedtalksteacher{
+  text-decoration: none;
+  color: #d6d6d6;
+}
+
+#tedtalksteacher:hover{
+  color: #6c000c;
+}
+
+.eyes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#sitefooter{
+  background-color: #6c000c;
+}
+
+footer{
+  padding: 1rem;
+}
+
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+footer a{
+  text-decoration: none;
+  color: #d6d6d6;
+}
+
+@media screen and (max-width:1000px){
+  body{
+    font-size: larger;
+  }
+
+  header{
+    flex-direction: column;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  nav ul{
+    justify-content: space-around;
+  }
+
+  #Biography{
+    background-position: center;
+  }
+
+  #Media{
+    background-position: center;
+  }
+
+  #Reason{
+    background-position: center;
+  }
+
+  .content{
+    flex-direction: column;
+    border-bottom: solid 1px #FFF;
+  }
+
+  .workcontent{
+    flex-direction: column;
+  }
+
+  .endcontent{
+    flex-direction: column;
+  }
+
+  .content article{
+    width: 90%;
+  }
+
+  .workcontent article{
+    width: 90%;
+  }
+
+  .endcontent article{
+    width: 90%;
+  }
+
+  .flexcontainer{
+    flex-direction: column;
+  }
+
+
+  .endimage{
+    display: none;
+  }
+}
+
+@media screen and (max-width:850px) {
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li{
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px #d6d6d6;
+  }
+
+  nav li a{
+    display: block;
+    padding: 1rem;
+  }
+
+  .preview{
+    flex-direction: column;
+    align-items: center ;
+  }
+
+  .preview a{
+    color: #aa0012;
+  }
+
+  #WorksAndInfluences{
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
+
+  #Media{
+    width: 100%;
+    background-position: top;
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
+
+  #Reason{
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .bio{
+    display: block;
+    text-align: center;
+  }
+
+  main img{
+    width: 100%;
+  }
+
+  main article{
+    font-size: smaller;
+  }
+
+  .publications{
+    flex-direction: column;
+  }
+
+  footer ul{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer li a{
+    display: block;
+    padding: 1rem;
+  }
+
+}
